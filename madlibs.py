@@ -30,12 +30,13 @@ adjective_4 = input("adjective_4 = ")
 adjective_5 = input("adjective_5 = ")
 
 text = f'''
-In ancient Greece, the famous philosopher {noun_1} was known for his {adjective_5} behavior and sharp wit. 
+In ancient Greece, the famous philosopher {noun_1} was known for his {adjective_5} behavior and sharp wit/charming. 
 
-He {verb_5} in a barrel, owned nothing, and often roamed the streets of Athens with a lantern in broad daylight, claiming to be looking for an {adjective_1} man. 
+He {verb_5} in a barrel/container, owned nothing, and often roamed/strolled the streets of Athens with a lantern in broad daylight, claiming to be looking for an {adjective_1} man. 
 
 One day, {noun_5}, having heard tales of {noun_1} wisdom and {adjective_4} lifestyle, decided to {verb_5} him. 
-{noun_5} found {noun_1} lounging in the sun, enjoying a simple {noun_2}.
+
+{noun_5} found {noun_1} lounging/cilling in the sun, enjoying a simple {noun_2}.
 
 "{noun_1}," {noun_5} proclaimed, "I am {noun_4} the Great, the {noun_3} of all the lands you see. 
 
@@ -43,19 +44,19 @@ I have come to {verb_2} the wisest man in Greece.
 
 Is there anything I can do for you?"
 
-{noun_1} looked up from his meal, squinted at {noun_5}, and replied, "Yes, there is something you can do for me. 
+{noun_1} looked up from his meal, squinted/blinked at {noun_5}, and replied, "Yes, there is something you can do for me. 
 
 Please {verb_3} out of my {adjective_2} sunlight."
 
-Stunned, Alexander laughed heartily. He admired Diogenes' audacity and said, "If I were not Alexander, I would wish to be Diogenes."
+Stunned, Alexander laughed heartily. He admired/looked up to Diogenes' audacity and said, "If I were not Alexander, I would wish to be Diogenes."
 
 Without missing a beat, Diogenes responded, "If I were not Diogenes, I too would wish to be Diogenes."
 
-The crowd that had gathered chuckled at the philosopher's wit. 
+The crowd that had gathered chuckled/gurgled at the philosopher's wit. 
 
-Alexander, amused and impressed, offered Diogenes a place at his court. Diogenes declined, saying he preferred his simple life of freedom.
+Alexander, amused and impressed, offered Diogenes a place at his court/court of law. Diogenes declined, saying he preferred his simple life of freedom.
 
-As Alexander walked away, his generals asked why he had tolerated such insolence. 
+As Alexander walked away, his generals asked why he had tolerated such insolence/shamelessness. 
 
 Alexander smiled and said, "If I were not Alexander, I would indeed wish to be Diogenes."
 
@@ -72,5 +73,8 @@ for char in text:
     
     if char in ".!?":
         time.sleep(0.5)
+
+    if char in ",":
+        time.sleep(0.2)
 
 print()
