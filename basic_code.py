@@ -95,3 +95,24 @@ for char in text:
 
 # Am Ende eine neue Zeile hinzufügen
 print()
+
+# plain code
+# import time
+# import sys
+
+
+# text = """
+# x
+# x
+# x
+# """
+
+# for char in text:
+#     sys.stdout.write(char)
+#     sys.stdout.flush()
+#     time.sleep(0.05)
+    
+#     if char in ".!?":
+#         time.sleep(0.5)
+
+# print()

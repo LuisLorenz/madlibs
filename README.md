@@ -11,3 +11,7 @@ as a result the var create a funny text in context
 input()
 var = ... 
 print()
+
+# variation
+the computer chooses a random word of a list which becomes the value for one of the given variables 
+so with this random mode always a new madlibs is created 
