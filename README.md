@@ -15,3 +15,5 @@ print()
 # variation
 the computer chooses a random word of a list which becomes the value for one of the given variables 
 so with this random mode always a new madlibs is created 
+for some variable I have to check that the random word is not repeated 
+- therefor create the option to let the user choose between selecting own words for variables or letting the computer choose randomly of my list
