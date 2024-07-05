@@ -1,6 +1,10 @@
 
 import time
 import sys
+import random
+from word_list import all_lists
+
+print(all_lists['nouns_person'])
 
 RED = '\033[91m'
 # YELLOW = '\033[93m'
