@@ -4,6 +4,9 @@ import sys
 import random
 from word_list import all_lists
 
+# print(all_lists['nouns_person'])
+    # it works
+    # when it did not work simply try to restart the terminal and try again
 
 RED = '\033[91m'
 # YELLOW = '\033[93m'
@@ -17,20 +20,62 @@ RESET = '\033[0m'
 
 print("Welcome to MADLIBS!!!")
 
-print("Please insert one word for each variable:")
 
-noun_1 = input("noun_1 (person) = ")
-noun_2 = input("noun_2 (person) = ")
-noun_3 = input("noun_3 (job) = ")
-noun_4 = input("noun_4 (location) = ")
-noun_5 = input("noun_5 (location) = ")
+# add here the flow text function 
 
-verb_1 = input("verb_1 in infitive = ")
-verb_2 = input("verb_2 in infitive = ")
-verb_3 = input("verb_3 in simple past = ")
+playstyle = input("""
+Please select your playstyle: 
 
-adjective_1 = input("adjective_1 = ")
-adjective_2 = input("adjective_2 = ")
+If you want to be creative and insert your own word insert 'user'.
+If you want the computer choose random word insert 'computer'. 
+                   """)
+# check the input if it is right
+
+# playstle == 'user' 
+if playstyle == 'user':
+    print("Please insert one word for each variable:")
+
+    noun_1 = input("noun_1 (person) = ")
+    noun_2 = input("noun_2 (person) = ")
+    noun_3 = input("noun_3 (job) = ")
+    noun_4 = input("noun_4 (location) = ")
+    noun_5 = input("noun_5 (location) = ")
+
+    verb_1 = input("verb_1 in infitive = ")
+    verb_2 = input("verb_2 in infitive = ")
+    verb_3 = input("verb_3 in simple past = ")
+
+    adjective_1 = input("adjective_1 = ")
+    adjective_2 = input("adjective_2 = ")
+
+# playstyle == 'computer'
+elif playstyle == 'computer':
+    noun_1 = random.choice(all_lists['nouns_person'])
+
+    noun_2 = random.choice(all_lists['nouns_person'])
+
+    noun_3 = random.choice(all_lists['nouns_job'])
+
+    noun_4 = random.choice(all_lists['nouns_location'])
+
+    noun_5 = random.choice(all_lists['nouns_location'])
+
+    
+    verb_1 = random.choice(all_lists['verbs_simple_past'])
+
+    verb_2 = random.choice(all_lists['verbs_simple_past'])
+
+    verb_3 = random.choice(all_lists['verbs_simple_past'])
+
+
+    adjective_1 = random.choice(all_lists['adjectives'])
+
+    adjective_2 = random.choice(all_lists['adjectives'])
+
+
+# else:
+#     print('Your input is invalide. Please try again!')
+
 
 
 text = f'''
