@@ -23,16 +23,28 @@ print("Welcome to MADLIBS!!!")
 
 # add here the flow text function 
 
-playstyle = input("""
+playstyle_test = f"""
 Please select your playstyle: 
 
-If you want to be creative and insert your own word insert 'user'.
-If you want the computer choose random word insert 'computer'. 
-                   """)
+If you want to be creative and insert your own word insert '1'.
+If you want the computer choose random word insert '2'.\n""" 
 # check the input if it is right
 
-# playstle == 'user' 
-if playstyle == 'user':
+for char in playstyle_test:
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(0.04)
+    
+    if char in ".!?":
+        time.sleep(0.4)
+
+    if char in ",":
+        time.sleep(0.1)
+
+playstyle = int(input('-> '))
+
+# playstle == 1
+if playstyle == 1:
     print("Please insert one word for each variable:")
 
     noun_1 = input("noun_1 (person) = ")
@@ -48,22 +60,28 @@ if playstyle == 'user':
     adjective_1 = input("adjective_1 = ")
     adjective_2 = input("adjective_2 = ")
 
-# playstyle == 'computer'
-elif playstyle == 'computer':
+# playstyle == 2
+elif playstyle == 2:
     noun_1 = random.choice(all_lists['nouns_person'])
 
     noun_2 = random.choice(all_lists['nouns_person'])
-
+    while noun_2 == noun_1:
+        noun_2 = random.choice(all_lists['nouns_person'])
+        
     noun_3 = random.choice(all_lists['nouns_job'])
 
     noun_4 = random.choice(all_lists['nouns_location'])
 
     noun_5 = random.choice(all_lists['nouns_location'])
+    while noun_5 == noun_4:
+        noun_5 = random.choice(all_lists['nouns_location'])
 
     
-    verb_1 = random.choice(all_lists['verbs_simple_past'])
+    verb_1 = random.choice(all_lists['verbs_infinitive'])
 
-    verb_2 = random.choice(all_lists['verbs_simple_past'])
+    verb_2 = random.choice(all_lists['verbs_infinitive'])
+    while verb_2 == verb_1:
+        verb_2 = random.choice(all_lists['verbs_infinitive'])
 
     verb_3 = random.choice(all_lists['verbs_simple_past'])
 
@@ -71,6 +89,8 @@ elif playstyle == 'computer':
     adjective_1 = random.choice(all_lists['adjectives'])
 
     adjective_2 = random.choice(all_lists['adjectives'])
+    while adjective_2 == adjective_1:
+        adjective_2 = random.choice(all_lists['adjectives'])
 
 
 # else:

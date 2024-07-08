@@ -69,7 +69,7 @@ nouns_location = [
 
 
 # verbs
-verbs_invitive = [
+verbs_infinitive = [
     'dance', 'pretend', 'sing',     'absquatulate', 'bamboozle', 'bedazzle', 'boggle', 'cackle',
     'canoodle', 'caterwaul', 'cavort', 'chortle', 'clamber',
     'clobber', 'coddiwomple', 'defenestrate', 'discombobulate', 'doodle',
@@ -138,7 +138,7 @@ all_lists = {
     'nouns_job': nouns_job,
     'nouns_location': nouns_location,
 
-    'verbs_invitive': verbs_invitive, 
+    'verbs_infinitive': verbs_infinitive, 
     'verbs_simple_past': verbs_simple_past,
 
     'adjectives': adjectives
